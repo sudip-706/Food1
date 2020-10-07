@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+
+}
+a{
+    text-decoration: none;
+    }
+html{
+    font-size: 1rem;
+    color: grey;
+}
+section{
+    padding: 4rem 5rem;
+}
+
+
+h2{
+    font-size: 200%;
+    text-align: center;
+}
+h2::after{
+    /* margin-top: 0.5rem; */
+    margin: 1rem auto;
+
+    display: block;
+    background-color: #e74c3c;
+    content: "";
+    height: 0.2rem;
+    width: 8rem;  
+}
+h3{
+    font-size: 160%;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+.showcase{
+    background-image: linear-gradient(to bottom, rgba(0, 0,0, 0.6), rgba(0,0,0,0.9) 96%), url('../img/food1.jpg') ;
+    height: 100vh;
+    background-position: center;
+    background-size: 100vw;
+}
+.main-heading{
+    color: white;
+}
+
+.text-box
+{
+    position: absolute;
+    top:34vh;
+    left:17vw;
+    font-size: 200%;
+    /* width: 30vw; */
+    font-family: 'Amiri', serif;
+    line-height: 4.8rem;
+
+
+}
+.span-styler{
+    color: #e74c3c
+
+}
+
+.nav-ul{
+
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    
+}
+
+.sticky {
+    position: fixed;
+    height: 4rem;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 1rem;
+    /* layers=> z inc nearer to user  */
+    z-index: 1;
+  }
+/* #nav{
+    position:fixed;
+    width: 100%;
+    height: 4rem;
+    z-index: 1;
+} */
+  .sticky .nav-links {
+    color: grey;
+  }
+
+.nav-links{
+    color: white;
+}
+.nav-li{
+    margin-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    font-size: 145%;
+}
+.nav-li:hover{
+border-bottom: 0.1rem solid #e74c3c;
+}
+
+.btns-container{
+    margin-top: 1rem;
+}
+.btn
+{
+    display: inline-block;
+    color: white;
+    border: 0.1rem solid  #e74c3c;
+    font-size: 50%;
+    padding: 0rem 1.2rem;
+    font-size: 58%;
+    border-radius: 1.7rem;
+    margin-right: 1rem;
+    transition: transform 0.5s;
+
+
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.btn-empty
+{
+    color: #e74c3c;
+    margin-left: 1rem;
+}
+
+.btn-full{
+    background-color: #e74c3c;
+    
+}
+.btn-empty:hover{
+    background-color: #e74c3c;
+    color: white;
+    scale: 1.2rem;
+}
+
+.icon{
+    color: #e74c3c;
+    font-size: 280%;
+    margin-bottom: 1.5rem;
+    
+}
+
+
+
+
+.container-parent{
+    display: flex;
+    text-align: center;
+
+
+}
+.container{
+    margin: 3rem;
+    padding: 4.5rem 4.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    transition: transform 0.5s;
+    border-radius: 3rem;
+}
+
+.container:hover{
+    transform: scale(1.2);
+}
+
+.feature-para{
+
+    font-size: 130%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+
+
+.steps{
+    /* height: 100vh; */
+    /* width: 100vw; */
+    background-color: rgb(220,220,220);
+
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+/* .grid-container{
+    display: grid;
+    height: 87%;
+    width: 85%;
+    background-color: greenyellow;
+    grid-template-columns: 1fr 1.2fr;
+    grid-column-gap: 2rem;
+} */
+.image-container{
+    text-align: center;
+    padding: 4rem;
+    margin-right: 11rem;
+    transition: transform 1s;
+    /* background-color: indianred; */
+}
+.image-container:hover{
+    transform: rotate(180deg);
+}
+/* .steps-container{
+    background-color: hotpink;
+} */
+.app-img{
+    width: 25vw;
+}
+.steps-container{
+    margin-top: 9rem;
+    padding: 1rem;
+    transition: transform 0.5s;
+    /* margin-left: 7rem; */
+}
+
+
+
+
+.steps-flex-container{
+    height: 28%;
+    
+}
+.steps-flex-container p{
+    padding-top: 0.7rem;
+    font-size: 120%;
+}
+.steps-flex-container div{
+    float: left;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    padding: 1.2rem 1.8rem;
+    border: 3px solid #e74c3c;
+    font-size: 213%;
+
+}
+.steps-container:hover{
+    transform: scale(1.2);
+
+}
+/* .clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+
+} */
+.plans{
+    
+    background-color: lightgray;
+    padding-left: 3rem;
+    padding-right: 0;
+    
+}
+.plan-parent {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-top: 4rem; */
+    flex-wrap: wrap;
+    /* height: 80vh; */
+}
+
+.plan-child {
+    width: 23%;
+    /* box-shadow: 0 1rem 3rem rgba(5, 5, 5, 0.295) !important; */
+    height: 85%;
+    /* background-color: blanchedalmond; */
+    padding: 2.5rem;
+    border-radius: 0.8rem;
+    border: 2px solid;
+    font-size: 140%;
+    line-height: 2rem;
+    padding-bottom: 0;
+    transition: transform 0.5s;
+    margin: 3rem;
+    margin-left: 0;
+    
+  }
+.plan-child:hover{
+    transform: scale(1.2);
+    background-color: rgb(236, 236, 236);
+}
+  .plan-header
+  {
+    /* height: 30%; */
+    border-bottom: 0.1rem solid grey;
+    padding-bottom: 1rem;
+  }
+  /* .plan-features {
+    height: 55%;
+  } */
+
+
+  .plan-btn__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a.signup-btn {
+    font-size: 87%;
+    position: relative;
+    top: 1.8rem;
+    margin: 0;
+    
+    border: 0.8rem solid #e74c3c;
+  }
+  .amt{
+    font-size: 294%;
+    color: #e74c3c;
+    line-height: 4rem;
+}
+  .h3plan{
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+
+}
+.check{
+    color: #e74c3c;
+    margin-right: 0.6rem;
+}
+.plan-list{
+    list-style-type: none;
+    
+}
+.plan-item{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: rgb(58, 56, 56);
+    height: 11rem;
+  }
+  .social-link {
+    display: flex;
+    width: 40%;
+  }
+  .text-value {
+    padding-right: 6%;
+  }
+  .footer-text {
+    display: flex;
+    width: 70%;
+    padding-right: 6%;
+  }
+  .footer-parent {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2%; */
+    padding-top: 3%;
+    padding-left: 4%;
+  }
+  .text-value a,
+  .icon-footer {
+    font-size: 160%;
+    color: white;
+  }
+  .social-link li {
+    padding-right: 10%;
+  }
+  .footer-p {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 140%;
+  }
+
+  .navname{
+      text-transform: uppercase;
+  }

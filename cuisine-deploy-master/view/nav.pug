@@ -1,0 +1,20 @@
+nav.sticky#nav(style = "position:relative")
+    ul.nav-ul
+        li.nav-li
+            a.nav-links(href='/') FEAURES
+        li.nav-li
+            a.nav-links(href='') REVIEW
+        li.nav-li
+            a.nav-links(href='/plans') PLANS
+        if name
+
+            li.nav-li
+                a.nav-links(href='/profile').navname #{name.split(" ")[0]}
+            li.nav-li
+                a.nav-links(href='javascript:;').logout LOGOUT
+        else
+            li.nav-li
+                a.nav-links(href='/login') LOGIN
+            li.nav-li
+                a.nav-links(href='/signup') SIGNUP
+            

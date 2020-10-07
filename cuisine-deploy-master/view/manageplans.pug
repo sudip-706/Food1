@@ -1,0 +1,19 @@
+extends base
+block style
+    link(rel='stylesheet', href='css/loginstyle.css')
+    link(rel='stylesheet', href='css/style.css')
+block content
+    .wrapper.backgrndmng
+        #formContent.fadeInDown
+            // Tabs Titles
+            h2.active  Manage Plans
+            // Icon
+            .fadeIn.first
+            // Signup Form
+            form.SignupForm
+                button.fadeIn.second.createplanbtn(type="submit")   Create Plan         
+                button.fadeIn.third.deleteplanbtn(type="submit")  Update Plan
+                button.fadeIn.fourth.createplanbtn(type="submit")  Delete Plan          
+                //- button.fadeIn.fifth.deleteplanbtn(type="submit")    
+append script
+    script(src="js/signup.js")

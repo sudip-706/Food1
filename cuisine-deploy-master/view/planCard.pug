@@ -1,0 +1,23 @@
+.plan-child
+    .plan-header
+        h3.h3plan #{plan.name}
+        p
+            span.amt $#{plan.price}
+            | /month
+        p That's only #{Math.ceil(plan.price/plan.duration)}$ per meal
+    .plan-features
+        ul.plan-list
+            li.plan-item
+                i.fas.fa-check.check
+                | 1 meal every day
+            li.plan-item
+                i.fas.fa-check.check
+                | Order 24/7
+            li.plan-item
+                i.fas.fa-check.check
+                | Access to newest creations
+            li.plan-item
+                i.fas.fa-check.check
+                | Free delivery
+    .plan-btn__container
+        a.btn.btn-full.signup-btn.payment(href='javascript:;', plan-id=`${plan["_id"]}`) I'm Hungry

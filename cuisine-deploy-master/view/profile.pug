@@ -1,0 +1,43 @@
+extend base
+block  content
+  section.mainprofile
+    section.profile-container
+      .profimg-container.fadeIn.first
+        .image
+          img.profimg(src=`${user.profileImage}`, alt='')
+        .upload
+          input(type="file", name="photo").updateProfile
+      .detail-container.fadeIn.second
+        .user-container
+          h1.username  #{user.name}
+        .user-container
+          h1.userole #{user.role}
+        .user-container
+          h1.useremail #{user.email}
+      if user.role=="admin"
+        <div class="admin-anchor fadeIn third">
+        <a href="/manageplans" class="manageplans adminbtn">MANAGE PLANS</a>
+        <a href="" class="manageuser adminbtn">MANAGE USERS</a>
+        </div>
+      else
+        .rotatin-img.fadeIn.third
+          img.rotatin-food(src='img/rotatinpizza.jpg', alt='')
+    section.profile-foodimg
+      
+    //- h2 User Page
+    //-   .user-container
+    //-       p Name :#{user.name}
+    //-       p Email:#{user.email}
+    //-       p 
+    //-         a(herf="/") Settings
+    //-       if user.role=="admin"
+    //-         p 
+    //-           a(href="/managePlans" ) Manage Plans
+    //-         p 
+    //-           a(href="/manageUser") Manage User
+append style
+  link(rel='stylesheet', href='css/profilestyle.css')
+  link(rel='stylesheet', href='css/loginstyle.css')
+
+append script
+  script(src="js/updateimage.js")
