@@ -1,0 +1,22 @@
+extends base
+block style
+    link(rel='stylesheet', href='../css/loginstyle.css')
+    link(rel='stylesheet', href='../css/style.css')
+block content
+    .wrapper
+        #formContent.fadeInDown
+            // Tabs Titles
+            h2.active  Reset Password
+            // Icon
+            .fadeIn.first
+            // Login Form
+            form.resetForm
+                input#login.fadeIn.second.password(type='password', name='login', placeholder='New Password')
+                input#password.fadeIn.third.cnfpassword(type='password', name='login', placeholder='Confirm Password')
+                button.fadeIn.fourth.resetbtn(type="submit") Reset  
+            //- #formFooter
+            //-     a.underlineHover(href='/forgot') Forgot Password?
+block script
+    script(src="../js/login.js")
+    script(src="https://unpkg.com/axios/dist/axios.min.js" crossorigin="true")
+    

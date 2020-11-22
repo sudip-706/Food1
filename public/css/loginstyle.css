@@ -39,15 +39,15 @@ h2 {
   padding: 20px;
 }
 .backgrndsignin{
-  background-image: url("../img/signinbkg.jpg");
+  background-image: url("../img/backgroundSIGN.jpg");
   background-size: 100vw;
 }
 .backgroundsignup{
-  background-image: url("../img/signupbkg.jpg");
+  background-image: url("../img/backgroundSIGN.jpg");
   background-size: 100vw;
 }
 .backgrndmng{
-  background-image: url("../img/mngplanbkg.jpg");
+  background-image: url("../img/backgroundSIGN.jpg");
   background-size: 100vw;
 
 }

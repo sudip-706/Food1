@@ -1,0 +1,25 @@
+extends base
+block style
+    link(rel='stylesheet', href='css/loginstyle.css')
+    link(rel='stylesheet', href='css/style.css')
+block content
+    .wrapper.backgroundsignup
+        #formContent.fadeInDown
+            // Tabs Titles
+            h2.active  Sign Up
+            // Icon
+            .fadeIn.first
+            // Signup Form
+            form.SignupForm
+                input#name.fadeIn.second.name(type="text",name="name",placeholder="Full Name")
+                input#signup.fadeIn.third.email(type='email', name='SignUp', placeholder='Email')
+                input#password.fadeIn.fourth.password(type='password', name='SignUp', placeholder='Password')
+                input#cpassword.fadeIn.fifth.confirmPassword(type='password', name='SignUp', placeholder='Confirm Password')
+                select#role.fadeIn.sixth.role
+                    option(value='user') User
+                    option(value='admin') Admin
+                    option(value='owner') Owner
+                    option(value='delivery boy') Delivery Boy                
+                button.fadeIn.seventh.loginbtn(type="submit") Sign Up   
+append script
+    script(src="js/signup.js")

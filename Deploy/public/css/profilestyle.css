@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+.mainprofile{
+    display: flex;
+    text-align: center;
+    padding: 0rem;
+}
+
+
+.profile-container{
+    height: 92.6vh;
+    width: 40vw;
+    background-color:  #e74c3c;
+
+}
+
+.profimg{
+    width: 14rem;
+    border: 0.8rem solid white;
+    transition: transform 0.5s;
+
+}
+.profimg:hover{
+    transform: scale(1.2);
+}
+
+.profimg-container{
+    display: block;
+    
+} 
+.detail-container{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    margin-top: 2.5rem;
+
+}
+.username{
+    font-size: 250%;
+}
+.useremail{
+    
+    text-transform: lowercase;
+    margin-top: 1rem;
+
+}
+.userole{
+    font-size: 150%;
+}
+.adminbtn{
+    display: inline-block;
+    color: grey;
+    border: 0.1rem solid #ffffff;
+    font-weight: 700;
+    margin: 1rem;
+    font-size: 50%;
+    padding: 1.2rem 1rem;
+    font-size: 100%;
+    border-radius: 1.2rem;
+    background-color: white;
+    transition: transform 0.5s;
+}
+.admin-anchor{
+    margin-top: 3rem;
+}
+
+.adminbtn:hover{
+    /* background-color: lightgrey; */
+    color: black;
+    /* border-color: lightgrey; */
+    transform: scale(1.2);
+}
+.profile-foodimg{
+    width: 60vw;
+    border: 4rem solid lightgray;
+    background-color: lightgray;
+    background-image: url(../img/profilefood.jpg);
+    background-size: cover;
+    
+
+}
+.prof-food{
+    height: 84vh ;;
+}
+.rotatin-food{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    transition: transform 1s;
+    
+}
+.rotatin-img{
+    margin-top: 2rem;
+
+}
+.rotatin-food:hover{
+    transform: scale(1.2) rotate(2turn);
+}
+.upload{
+    margin-top: 1rem;
+}
+.updateProfile{
+    color: white;
+    font-family: 'Acme', sans-serif;
+    width: 14rem;
+    transition: transform 0.5s;
+}
+.updateProfile::-webkit-file-upload-button {
+    
+    
+    color: #e74c3c;
+    border-radius: 1rem;
+    background-color: white;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Acme', sans-serif;
+    
+  }
+
+/* .updateProfile::-webkit-file-upload-text {
+    visibility: hidden;
+  } */
+
+  .updateProfile::-webkit-file-upload-button:hover{
+      color: black;
+  }
+ 

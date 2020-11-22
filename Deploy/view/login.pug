@@ -1,0 +1,20 @@
+extends base
+block style
+    link(rel='stylesheet', href='css/loginstyle.css')
+    link(rel='stylesheet', href='css/style.css')
+block content
+    .wrapper.backgrndsignin
+        #formContent.fadeInDown
+            // Tabs Titles
+            h2.active  Sign In 
+            // Icon
+            .fadeIn.first
+            // Login Form
+            form.loginForm
+                input#login.fadeIn.second.email(type='email', name='login', placeholder='Email')
+                input#password.fadeIn.third.password(type='password', name='login', placeholder='Password')
+                button.fadeIn.fourth.loginbtn(type="submit") Log In   
+            #formFooter
+                a.underlineHover(href='/forgot') Forgot Password?
+append script
+    script(src="js/login.js")
